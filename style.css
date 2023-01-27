@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right, #70e1f5, #ffd194);
+  font-family: Lato, sans-serif;
+  padding: clamp(20px, 5vw, 50px) 10px;
+  color: #161616;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h1{
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.container h1 span{
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.chrono {
+  display: flex;
+  justify-content: center;
+}
+
+.child-chrono{
+  background-color: #fff;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+  margin: 25px 3px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.param .param-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.param .param-btn button{
+  border: none;
+  outline: none;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, .5);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.param .param-btn button:hover{
+  margin: 15px ;
+  transform: scale(1.5);
+}
+
+.param .param-btn button:active{
+  margin: 15px ;
+  transform: scale(1.5);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, .5);
+  
+}
+
+.param .param-btn img{
+  display: flex;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.cycles{
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
